@@ -1,0 +1,10 @@
+---
+Name: cookie-policy
+After: 'framework/*','cms/*'
+---
+SiteConfig:
+  extensions:
+    - CookiePolicySiteConfigExtension
+Page_Controller:
+  extensions:
+    - CookiePolicyPageExtension

@@ -1,16 +1,23 @@
 {
-    "name": "derrobert/silverstripe-cookie-policy",
-    "authors": [
-        {
-            "name": "Robert Schwandner",
-            "email": "rs@rob24.de"
-        }
-    ],
-    "type": "silverstripe-module",
-    "keywords": ["silverstripe", "cookie", "policy", "eu"],
-    "minimum-stability": "dev",
-    "require": {},
-    "extra": {
-        "installer-name": "cookie-policy"
+  "name": "derrobert/silverstripe-cookie-policy",
+  "authors": [
+    {
+      "name": "Robert Schwandner",
+      "email": "rs@rob24.de"
     }
+  ],
+  "type": "silverstripe-module",
+  "keywords": [
+    "silverstripe",
+    "cookie",
+    "policy",
+    "eu"
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "silverstripe/framework": "3.*"
+  },
+  "extra": {
+    "installer-name": "cookie-policy"
+  }
 }

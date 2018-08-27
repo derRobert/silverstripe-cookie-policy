@@ -1,7 +1,6 @@
 if( ! document.cookie.match(/^(.*;)?\s*CookiePolicyAccepted\s*=\s*[^;]+(.*)?$/)  ) {
     var request = new XMLHttpRequest();
-
-    request.open("GET","/cookie-policy-control");
+    request.open("GET","/cookie-policy-control/");
     request.addEventListener('load', function(event) {
         if (request.status >= 200 && request.status < 300) {
             var c = document.createElement('div');

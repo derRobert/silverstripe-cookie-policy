@@ -12,9 +12,8 @@ class CookiePolicyAjaxController extends Controller
 
     public function index(SS_HTTPRequest $request)
     {
-        if (!Director::is_ajax()) {
-            return $this->httpError(403, 'ajax only ...');
-        }
+        // Director::is_ajax() geht hier leider nicht ... keine Ahnung warum
+
         $cfg = SiteConfig::current_site_config();
         if (!$cfg->CookiePolicyEnabled) {
             return;

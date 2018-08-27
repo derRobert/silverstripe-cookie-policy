@@ -1,0 +1,7 @@
+---
+Name: cookie-policy-routes
+After: tour32baseroutes
+---
+Director:
+  rules:
+    'cookie-policy-control//$Action/$ID/$OtherID': 'CookiePolicyAjaxController'
